@@ -1,0 +1,297 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--bg-main);
+    height: 100vh;
+}
+
+:root {
+  --bg-main: #060c14;
+  --bg-card: #0A1A2F;
+  --primary: #00BFFF;
+  --secondary: #B0B7C3;  
+  --text-main: #EDEFF2;
+    --text-secondary: #7c7d7e;
+}
+
+.logo img {
+    width: 10vw;
+    height: auto;
+}
+
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.flex {
+    display: flex;
+
+}
+ .btn-contato button {
+    padding:  10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--primary) ;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s; 
+}
+
+ .btn-contato button:hover {
+    box-shadow: 0 0 8px var(--primary);
+    transform: scale(1.10);
+}
+
+/* Estilo do Cabeçario */
+
+.cabecario {
+    padding : 40px 4%;
+}
+
+.cabecario > .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecario a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cabecario a:hover {
+    color: var(--primary);
+    transition: 0.2s;
+    transform: scale(1.10) ;
+}
+.cabecario nav ul {
+    list-style: none;   
+}
+
+.cabecario nav ul li {
+    display: inline-block;
+    padding : 0 40px;
+}
+
+
+/* Estilo do Topo do Site*/
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    position: relative;
+    bottom: 10vh;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    color: var(--text-main);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.topo-do-site span {
+    color: var(--primary);
+    font-size: 55px;
+}
+
+.img-topo-site img {
+    width: 30vw;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate; 
+}
+
+.topo-do-site .txt-topo-site p {
+    color: var(--secondary);
+    font-size: 20px;
+}
+
+.topo-do-site .btn-contato  button{
+    margin-top: 30px;
+    position: relative;
+     animation: button 1s ease-in-out infinite alternate;
+}
+
+
+
+
+@keyframes flutuar {
+    0% {  /*Estado inicial*/
+        top: 0;
+    }
+    100% { /*Estado final*/
+        top: 30px;
+     }
+}
+
+@keyframes button {
+    0% {  /*Estado inicial*/
+        box-shadow: 0 0 5px var(--primary);
+    }
+    100% { /*Estado final*/
+        box-shadow: 0 0 15px var(--primary);
+     }
+
+
+}
+
+/* Estilo da Seção de Especialidades*/
+section.especialidades {
+    padding: 40px 4%;
+}
+section.especialidades .flex {
+    gap: 60px;
+    justify-content: center;
+}
+
+.titulo {
+    color: var(--text-main);
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ .titulo span {
+    color: var(--primary);
+}
+
+.especialidades .esp-box {
+    color: var(--text-main);
+    padding: 40px;
+    margin-top: 45px;
+    transition: 0.2s ease-in-out;
+    max-width: 25vw;
+}
+
+
+.especialidades .esp-box:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 8px var(--primary);
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.especialidades .esp-box img {
+    width: 70px;
+    height: auto;
+    filter: invert(100%) sepia(70%) grayscale(100%) brightness(150%) contrast(100%) drop-shadow(0 0 5px var(--primary));
+}
+
+
+.especialidades .esp-box  h3 {
+    font-size: 28px;
+    margin: 15px 0 ;
+    color: var(--primary);
+}
+
+.especialidades .esp-box span {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+/*Estilo do Sobre Mim*/
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    gap: 70px;
+    align-items: center;
+}
+.img-sobre img {
+    width: 30vw;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.sobre .txt-sobre {
+    color: var(--text-main);
+
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+.sobre .txt-sobre h2 span {
+    color: var(--primary);
+    display: block;
+    font-size: 40px;
+    animation: span 1s ease-in-out infinite alternate;
+}
+.sobre .txt-sobre h2 span:hover{
+    text-shadow: 0 0 3px var(--primary);
+}
+.sobre .txt-sobre span {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0 ;
+    text-align: justify;
+}
+
+@keyframes span {
+    0% {  /*Estado inicial*/
+        text-shadow: 0 0 3px var(--primary);
+    }
+    100% { /*Estado final*/
+        text-shadow: 0 0 8px var(--primary);
+     }
+}
+/* container dos botões */
+.sobre .txt-sobre .btn-social {
+    display: flex;
+    gap: 14px;
+}
+
+/* botão */
+.sobre .txt-sobre .btn-social a button {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    cursor: pointer;
+    border: none;
+    transition: 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* efeito hover */
+.sobre .txt-sobre .btn-social a button:hover {
+    box-shadow: 0 0 14px var(--primary);
+    transform: scale(1.08);
+}
+
+/* ícone */
+.sobre .txt-sobre .btn-social a button img {
+    width: 25px;
+    height: auto;
+    filter: sepia(70%) grayscale(100%) brightness(150%) contrast(100%);
+}

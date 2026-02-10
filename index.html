@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,7 +146,57 @@
                 </div><!--flex-->
             </div><!--interface-->
 
-        </section>
+        </section> <!--sobre-->
+
+        <section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">
+                    Meus <span>Projetos.</span>
+                </h2> <!--titulo-->
+                <h3 class="complexo">
+                    Complexo <span>Maromba :</span> <a
+                        href="https://igor-moraes.github.io/Projeto-Academia-Fitness/index.html" rel="external"
+                        target="_blank"> Visite<span> Já!</span> </a>
+                </h3><!--complexo-->
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/complexo.png);">
+                        <div class="overlay">
+                          Home page
+                        </div><!--overlay-->
+                    </div><!--img-port-->
+                    <div class="img-port" style="background-image: url(images/complexo2.png);">
+                        <div class="overlay">
+                            Faq e Nutrição
+                        </div><!--overlay-->
+
+                    </div><!--img-port-->
+
+                    <div class="img-port" style="background-image: url(images/exp1.png);">
+                        <div class="overlay">
+                            Form page
+                        </div><!--overlay-->
+
+                    </div><!--img-port-->
+
+                </div><!--flex-->
+
+            </div><!--interface-->
+
+        </section> <!--portfolio-->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">Entre em <span>Contato.</span></h2>
+                <form class="form-contato" id="formulario">
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo:"required>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail:" required>
+                    <input type="text" name="telefone" id="telefone" placeholder="Digite seu número:">
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem:" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Enviar" onclick="enviar()"> <input type="button" onclick="limpar()" value="Limpar"></div>
+                </form>
+            </div><!--interface-->
+
+        </section> <!--formulario-->
     </main>
 
 

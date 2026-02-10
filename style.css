@@ -15,11 +15,11 @@ body {
 }
 
 :root {
-  --bg-main: #060c14;
-  --bg-card: #0A1A2F;
-  --primary: #00BFFF;
-  --secondary: #B0B7C3;  
-  --text-main: #EDEFF2;
+    --bg-main: #060c14;
+    --bg-card: #0A1A2F;
+    --primary: #00BFFF;
+    --secondary: #B0B7C3;
+    --text-main: #EDEFF2;
     --text-secondary: #7c7d7e;
 }
 
@@ -38,18 +38,19 @@ body {
     display: flex;
 
 }
- .btn-contato button {
-    padding:  10px 40px;
+
+.btn-contato button {
+    padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: var(--primary) ;
+    background-color: var(--primary);
     border: 0;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.2s; 
+    transition: 0.2s;
 }
 
- .btn-contato button:hover {
+.btn-contato button:hover {
     box-shadow: 0 0 8px var(--primary);
     transform: scale(1.10);
 }
@@ -57,10 +58,10 @@ body {
 /* Estilo do Cabeçario */
 
 .cabecario {
-    padding : 40px 4%;
+    padding: 40px 4%;
 }
 
-.cabecario > .interface {
+.cabecario>.interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,15 +76,16 @@ body {
 .cabecario a:hover {
     color: var(--primary);
     transition: 0.2s;
-    transform: scale(1.10) ;
+    transform: scale(1.10);
 }
+
 .cabecario nav ul {
-    list-style: none;   
+    list-style: none;
 }
 
 .cabecario nav ul li {
     display: inline-block;
-    padding : 0 40px;
+    padding: 0 40px;
 }
 
 
@@ -106,6 +108,7 @@ section.topo-do-site .flex {
     font-size: 48px;
     margin-bottom: 20px;
 }
+
 .topo-do-site span {
     color: var(--primary);
     font-size: 55px;
@@ -118,7 +121,7 @@ section.topo-do-site .flex {
     border: 2px solid var(--primary);
     box-shadow: 0 0 10px var(--primary);
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate; 
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -126,31 +129,37 @@ section.topo-do-site .flex {
     font-size: 20px;
 }
 
-.topo-do-site .btn-contato  button{
+.topo-do-site .btn-contato button {
     margin-top: 30px;
     position: relative;
-     animation: button 1s ease-in-out infinite alternate;
+    animation: button 1s ease-in-out infinite alternate;
 }
 
 
 
 
 @keyframes flutuar {
-    0% {  /*Estado inicial*/
+    0% {
+        /*Estado inicial*/
         top: 0;
     }
-    100% { /*Estado final*/
+
+    100% {
+        /*Estado final*/
         top: 30px;
-     }
+    }
 }
 
 @keyframes button {
-    0% {  /*Estado inicial*/
+    0% {
+        /*Estado inicial*/
         box-shadow: 0 0 5px var(--primary);
     }
-    100% { /*Estado final*/
+
+    100% {
+        /*Estado final*/
         box-shadow: 0 0 15px var(--primary);
-     }
+    }
 
 
 }
@@ -159,6 +168,7 @@ section.topo-do-site .flex {
 section.especialidades {
     padding: 40px 4%;
 }
+
 section.especialidades .flex {
     gap: 60px;
     justify-content: center;
@@ -171,7 +181,7 @@ section.especialidades .flex {
     margin-bottom: 20px;
 }
 
- .titulo span {
+.titulo span {
     color: var(--primary);
 }
 
@@ -181,6 +191,12 @@ section.especialidades .flex {
     margin-top: 45px;
     transition: 0.2s ease-in-out;
     max-width: 25vw;
+}
+
+.especialidades .esp-box p {
+    color: var(--secondary);
+    font-size: 18px;
+    gap: 20px;
 }
 
 
@@ -198,15 +214,14 @@ section.especialidades .flex {
 }
 
 
-.especialidades .esp-box  h3 {
+.especialidades .esp-box h3 {
     font-size: 28px;
-    margin: 15px 0 ;
+    margin: 15px 0;
     color: var(--primary);
 }
 
 .especialidades .esp-box span {
     color: var(--primary);
-    font-size: 25px;
 }
 
 /*Estilo do Sobre Mim*/
@@ -218,6 +233,7 @@ section.sobre .flex {
     gap: 70px;
     align-items: center;
 }
+
 .img-sobre img {
     width: 30vw;
     height: auto;
@@ -236,33 +252,40 @@ section.sobre .flex {
     margin-bottom: 20px;
 
 }
+
 .sobre .txt-sobre h2 span {
     color: var(--primary);
     display: block;
     font-size: 40px;
     animation: span 1s ease-in-out infinite alternate;
 }
-.sobre .txt-sobre h2 span:hover{
+
+.sobre .txt-sobre h2 span:hover {
     text-shadow: 0 0 3px var(--primary);
 }
+
 .sobre .txt-sobre span {
     color: var(--primary);
     font-size: 20px;
 }
 
 .sobre .txt-sobre p {
-    margin: 20px 0 ;
+    margin: 20px 0;
     text-align: justify;
 }
 
 @keyframes span {
-    0% {  /*Estado inicial*/
+    0% {
+        /*Estado inicial*/
         text-shadow: 0 0 3px var(--primary);
     }
-    100% { /*Estado final*/
+
+    100% {
+        /*Estado final*/
         text-shadow: 0 0 8px var(--primary);
-     }
+    }
 }
+
 /* container dos botões */
 .sobre .txt-sobre .btn-social {
     display: flex;
@@ -294,4 +317,142 @@ section.sobre .flex {
     width: 25px;
     height: auto;
     filter: sepia(70%) grayscale(100%) brightness(150%) contrast(100%);
+}
+
+/* Estilo do Portfolio */
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.055);
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+}
+
+section.portfolio .interface .complexo {
+    color: var(--text-main);
+    font-size: 25px;
+    margin: 0 0 29px 20px;
+}
+
+section.portfolio .interface .complexo span {
+    color: #E50914;
+
+}
+
+section.portfolio .interface .complexo a {
+    padding: 5px;
+    color: var(--text-main);
+    border-radius: 5px;
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+    animation: ja 2s infinite ease-in-out;
+}
+
+@keyframes ja {
+    0% {
+        text-shadow: 0 0 0px #E50914;
+        text-decoration: underline var(--text-main);
+    }
+
+    50% {
+        text-shadow: 5px 0 9px #E50914;
+        text-decoration: underline #fd3c3c;
+    }
+
+    100% {
+        text-shadow: 10px 0 12px #E50914;
+        text-decoration: underline #E50914;
+    }
+}
+
+
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: var(--bg-card);
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s ease-in-out;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 0.5px solid #E50914;
+    
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+    box-shadow: 0px 0px 10px 5px #E50914;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 12, 20, 0.9);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-main);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.img-port:hover .overlay {
+    opacity: 0.6;
+}
+
+/*Estilo do Contato */
+section.formulario {
+    padding: 80px 4%;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input , form textarea {
+    width: 100%;
+    background-color: var(--bg-card);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    color: var(--text-main);
+    font-size: 18px;
+    border-radius: 15px;
+    resize: none;
+}
+
+form input::placeholder , form textarea::placeholder {
+    color: var(--primary);
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit] , form .btn-enviar input[type=button] {
+    width: 140px;
+    background-color: var(--primary);
+    color: var(--bg-main);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+form .btn-enviar input[type=submit]:hover , form .btn-enviar input[type=button]:hover {
+    box-shadow: 0 0 14px var(--primary);
+    transform: scale(1.08);
 }

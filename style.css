@@ -287,13 +287,13 @@ section.sobre .flex {
 }
 
 /* container dos botões */
-.sobre .txt-sobre .btn-social {
+.btn-social {
     display: flex;
     gap: 14px;
 }
 
 /* botão */
-.sobre .txt-sobre .btn-social a button {
+.btn-social a button {
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -307,13 +307,13 @@ section.sobre .flex {
 }
 
 /* efeito hover */
-.sobre .txt-sobre .btn-social a button:hover {
+.btn-social a button:hover {
     box-shadow: 0 0 14px var(--primary);
     transform: scale(1.08);
 }
 
 /* ícone */
-.sobre .txt-sobre .btn-social a button img {
+.btn-social a button img {
     width: 25px;
     height: auto;
     filter: sepia(70%) grayscale(100%) brightness(150%) contrast(100%);
@@ -379,7 +379,7 @@ section.portfolio .interface .complexo a {
     position: relative;
     overflow: hidden;
     border: 0.5px solid #E50914;
-    
+
 }
 
 .img-port:hover {
@@ -413,6 +413,7 @@ section.portfolio .interface .complexo a {
 section.formulario {
     padding: 80px 4%;
 }
+
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -422,7 +423,8 @@ form {
     margin-top: 40px;
 }
 
-form input , form textarea {
+form input,
+form textarea {
     width: 100%;
     background-color: var(--bg-card);
     border: none;
@@ -434,7 +436,8 @@ form input , form textarea {
     resize: none;
 }
 
-form input::placeholder , form textarea::placeholder {
+form input::placeholder,
+form textarea::placeholder {
     color: var(--primary);
 }
 
@@ -443,7 +446,8 @@ form .btn-enviar {
     text-align: center;
 }
 
-form .btn-enviar input[type=submit] , form .btn-enviar input[type=button] {
+form .btn-enviar input[type=submit],
+form .btn-enviar input[type=button] {
     width: 140px;
     background-color: var(--primary);
     color: var(--bg-main);
@@ -452,7 +456,110 @@ form .btn-enviar input[type=submit] , form .btn-enviar input[type=button] {
     text-align: center;
     margin: 10px;
 }
-form .btn-enviar input[type=submit]:hover , form .btn-enviar input[type=button]:hover {
+
+form .btn-enviar input[type=submit]:hover,
+form .btn-enviar input[type=button]:hover {
     box-shadow: 0 0 14px var(--primary);
     transform: scale(1.08);
+}
+
+/* Estilo do Rodapé */
+
+.logo-footer img {
+    width: 10vw;
+    height: auto;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.055);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer p .email {
+    width: 20px;
+    filter: invert(100%) sepia(70%) grayscale(100%) brightness(150%) contrast(100%) drop-shadow(0 0 5px var(--primary));
+
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid var(--primary);
+}
+
+footer .line-footer p {
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: var(--text-main);
+    text-shadow: 0 0 5px var(--primary);
+}
+
+/* Responsividade */
+@media screen and (max-width: 1020px) {
+
+    /*Classes gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+
+    /*Cabecario */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* Topo do Site */
+
+    section.topo-do-site {
+        padding: 20px 10%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 20px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 60px;
+    }
+
+    .logo img {
+        width: 20vw;
+        height: auto;
+    }
+
+    /* Especialidades */
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    .especialidades .esp-box {
+    color: var(--text-main);
+    padding: 40px;
+    margin-top: 45px;
+    transition: 0.2s ease-in-out;
+    max-width: 90vw;
+}
+
 }

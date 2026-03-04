@@ -139,7 +139,7 @@
                                 <button><img src="images/github.svg" alt="Logo do github"></button>
                             </a>
 
-                        </div>
+                        </div> <!--btn-social-->
 
                     </div> <!--txt-sobre-->
 
@@ -161,7 +161,7 @@
                 <div class="flex">
                     <div class="img-port" style="background-image: url(images/complexo.png);">
                         <div class="overlay">
-                          Home page
+                            Home page
                         </div><!--overlay-->
                     </div><!--img-port-->
                     <div class="img-port" style="background-image: url(images/complexo2.png);">
@@ -188,16 +188,49 @@
             <div class="interface">
                 <h2 class="titulo">Entre em <span>Contato.</span></h2>
                 <form class="form-contato" id="formulario">
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo:"required>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo:" required>
                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail:" required>
                     <input type="text" name="telefone" id="telefone" placeholder="Digite seu número:">
                     <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem:" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="Enviar" onclick="enviar()"> <input type="button" onclick="limpar()" value="Limpar"></div>
+                    <div class="btn-enviar"><input type="submit" value="Enviar" onclick="enviar()"> <input type="button"
+                            onclick="limpar()" value="Limpar"></div>
                 </form>
             </div><!--interface-->
 
         </section> <!--formulario-->
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="Logo do Meu Site ">
+                    </div> <!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/igorcdemoraes/" rel="external" target="_blank">
+                            <button><img src="images/instagram.svg" alt="Logo do instargram"></button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/igor-carvalho-de-moraes-651642352/?trk=opento_sprofile_goalscard"
+                            rel="external" target="_blank">
+                            <button><img src="images/linkedin.svg" alt="Logo do linkedin"></button>
+                        </a>
+                        <a href="https://github.com/Igor-Moraes" rel="external" target="_blank">
+                            <button><img src="images/github.svg" alt="Logo do github"></button>
+                        </a>
+                    </div>
+                </div> <!--flex-->
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p>
+                    <img class="email" src="images/envelope.svg" alt="icone de email"> <a
+                        href="mailto:igorcdemoraes@gmail.com">igorcdemoraes@gmail.com</a>
+                </p>
+            </div><!--line-footer-->
+
+        </div> <!--interface-->
+    </footer>
 
 
 </body>

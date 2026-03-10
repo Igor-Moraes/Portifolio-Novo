@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <title>Portfólio</title>
 </head>
 
@@ -44,6 +45,31 @@
                 <button>Contato</button>
             </div> <!--btn-contato-->
 
+            <div class="btn-abrir-menu" id="btn-menu">
+                <img src="images/list.svg" alt="Icone de lista"> <!--btn-menu-->
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <img src="images/x-lg.svg" alt="Fechar menu">
+
+                </div> <!--btn-fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#"> Início </a></li>
+                        <li><a href="#"> Especialidades </a></li>
+                        <li><a href="#"> Sobre</a></li>
+                        <li><a href="#"> Projetos </a></li>
+                        <li><a href="#"> Contato </a></li>
+                    </ul>
+                </nav>
+
+            </div> <!--menu-mobile-->
+
+            <div class="overlay-menu">
+
+            </div>
         </div> <!--interface-->
 
     </header> <!--cabecario-->

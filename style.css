@@ -83,10 +83,78 @@ body {
     list-style: none;
 }
 
-.cabecario nav ul li {
+.cabecario nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
+
+/*Estilo do Menu Mobile */
+.btn-abrir-menu img {
+    width: 40px;
+    height: auto;
+}
+
+.menu-mobile {
+    background-color: var(--bg-main);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    width: 0%;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-mobile.abrir {
+    width: 60%;
+}
+
+.menu-mobile.abrir~.overlay-menu {
+    display: block;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: var(--text-main);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+    transition: 0.2s ease-in-out;
+    margin-right: 2px;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: var(--primary);
+    color: var(--bg-main);
+    transform: scale(1.05);
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar img {
+    width: 25px;
+    height: auto;
+
+}
+
+.overlay-menu {
+    background-color: #00000077;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
 
 
 /* Estilo do Topo do Site*/
@@ -379,7 +447,8 @@ section.portfolio .interface .complexo a {
     position: relative;
     overflow: hidden;
     border: 0.5px solid #E50914;
-
+    max-width: 360px;
+    margin: 0 auto;
 }
 
 .img-port:hover {
@@ -555,11 +624,68 @@ footer .line-footer p a {
     }
 
     .especialidades .esp-box {
-    color: var(--text-main);
-    padding: 40px;
-    margin-top: 45px;
-    transition: 0.2s ease-in-out;
-    max-width: 90vw;
-}
+        color: var(--text-main);
+        padding: 40px;
+        margin-top: 45px;
+        transition: 0.2s ease-in-out;
+        max-width: 90vw;
+    }
+
+    /* Sobre mim */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 32px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .sobre .txt-sobre h2 span {
+        margin-top: 10px;
+    }
+
+    .img-sobre img {
+        width: 50vw;
+        height: auto;
+        border-radius: 100%;
+    }
+
+    .sobre .btn-social {
+        justify-self: center;
+    }
+
+    /* Portfolio */
+    section .portofolio {
+        padding: 80px 8%;
+    }
+
+    ;
+
+    .img-port {
+        width: 100%;
+        height: auto;
+
+    }
+
+    section.portfolio .flex {
+        gap: 40px;
+
+    }
+
+    /*Rodapé */
+    footer .line-footer {
+        text-align: center;
+
+    }
+
+    footer .line-footer img {
+        width: 80px;
+    }
+
+    footer .btn-social {
+        justify-content: center;
+    }
 
 }

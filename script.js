@@ -1,3 +1,20 @@
+    let btnMenu = document.getElementById('btn-menu');
+    let menu = document.getElementById('menu-mobile');
+    let overlay = document.querySelector('.overlay-menu');
+    let btnFechar = document.querySelector('.btn-fechar');
+
+    btnMenu.addEventListener('click', () => {
+        menu.classList.add('abrir');
+    });
+
+    btnFechar.addEventListener('click', () => {
+        menu.classList.remove('abrir');
+    });
+
+    overlay.addEventListener('click', () => {
+        menu.classList.remove('abrir');
+    });
+
 function enviar() {
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
@@ -5,10 +22,10 @@ function enviar() {
     const mensagem = document.getElementById('mensagem').value;
     const formulario = document.getElementById('formulario');
 
-    formulario.addEventListener('submit', function(event) {
+    formulario.addEventListener('submit', function (event) {
         event.preventDefault();
     });
-    
+
     if (nome === "" || email === "" || mensagem === "") {
         alert('Por favor, preencha os campos obrigatórios!');
         return;
@@ -19,7 +36,7 @@ function enviar() {
         const texto = `Nome : ${nome}. Email :  ${email}. Telefone : ${telefone}.
         Mensagem : ${mensagem}`;
         const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-    
+
         window.open(url, '_blank');
 
     }

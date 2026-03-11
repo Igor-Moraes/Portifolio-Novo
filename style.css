@@ -9,14 +9,23 @@
     font-style: normal;
 }
 
+/* smooth scroll for anchor navigation */
+html {
+    scroll-behavior: smooth;
+    /* offset for fixed header so anchors aren't hidden beneath it */
+    scroll-padding-top: 180px;
+}
+
+
 body {
     background-color: var(--bg-main);
     height: 100vh;
+    margin-top: 27vh;
 }
 
 :root {
     --bg-main: #060c14;
-    --bg-card: #0A1A2F;
+    --bg-card: #091627;
     --primary: #00BFFF;
     --secondary: #B0B7C3;
     --text-main: #EDEFF2;
@@ -24,7 +33,7 @@ body {
 }
 
 .logo img {
-    width: 10vw;
+    width: 9vw;
     height: auto;
 }
 
@@ -39,7 +48,7 @@ body {
 
 }
 
-.btn-contato button {
+.btn-contato #btn-contato {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -48,36 +57,50 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: 0.2s;
+    color: var(--bg-main);
+
 }
 
-.btn-contato button:hover {
+.btn-contato #btn-contato:hover {
     box-shadow: 0 0 8px var(--primary);
     transform: scale(1.10);
 }
 
+
 /* Estilo do Cabeçario */
 
 .cabecario {
-    padding: 40px 4%;
+    padding: 1px 4%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-card);
+    height: 17vh;
 }
 
 .cabecario>.interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-.cabecario a {
+.cabecario a,
+footer .line-footer a {
     color: var(--text-secondary);
     text-decoration: none;
     display: inline-block;
 }
 
-.cabecario a:hover {
+.cabecario a:hover,
+footer .line-footer .menu-desktop a:hover {
     color: var(--primary);
     transition: 0.2s;
     transform: scale(1.10);
 }
+
+
 
 .cabecario nav ul {
     list-style: none;
@@ -155,6 +178,9 @@ body {
     display: none;
 }
 
+.btn-abrir-menu {
+    display: none;
+}
 
 
 /* Estilo do Topo do Site*/
@@ -195,13 +221,18 @@ section.topo-do-site .flex {
 .topo-do-site .txt-topo-site p {
     color: var(--secondary);
     font-size: 20px;
+    margin-bottom: 30px;
 }
 
-.topo-do-site .btn-contato button {
-    margin-top: 30px;
+.topo-do-site .btn-contato #btn-contato {
+    margin-top: 70px;
     position: relative;
     animation: button 1s ease-in-out infinite alternate;
+    text-decoration: none;
+    gap: 10px;
 }
+
+
 
 
 
@@ -593,6 +624,10 @@ footer .line-footer p a {
     .menu-desktop,
     .btn-contato {
         display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
     }
 
     /* Topo do Site */

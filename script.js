@@ -1,19 +1,26 @@
-    let btnMenu = document.getElementById('btn-menu');
-    let menu = document.getElementById('menu-mobile');
-    let overlay = document.querySelector('.overlay-menu');
-    let btnFechar = document.querySelector('.btn-fechar');
+let btnMenu = document.getElementById('btn-menu');
+let menu = document.getElementById('menu-mobile');
+let overlay = document.querySelector('.overlay-menu');
+let btnFechar = document.querySelector('.btn-fechar');
 
-    btnMenu.addEventListener('click', () => {
-        menu.classList.add('abrir');
-    });
+btnMenu.addEventListener('click', () => {
+    menu.classList.add('abrir');
+});
 
-    btnFechar.addEventListener('click', () => {
+btnFechar.addEventListener('click', () => {
+    menu.classList.remove('abrir');
+});
+
+overlay.addEventListener('click', () => {
+    menu.classList.remove('abrir');
+});
+
+// close mobile menu when a navigation link is clicked
+document.querySelectorAll('.menu-mobile nav a').forEach(link => {
+    link.addEventListener('click', () => {
         menu.classList.remove('abrir');
     });
-
-    overlay.addEventListener('click', () => {
-        menu.classList.remove('abrir');
-    });
+});
 
 function enviar() {
     const nome = document.getElementById('nome').value;

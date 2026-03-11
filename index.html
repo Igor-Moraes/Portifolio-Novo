@@ -22,8 +22,8 @@
     <title>Portfólio</title>
 </head>
 
-<body>
-    <header class="cabecario">
+<body  id="txt-topo-site">
+    <header class="cabecario" id="cabecario">
 
         <div class="interface">
             <div class="logo">
@@ -33,16 +33,16 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#"> Início </a></li>
-                    <li><a href="#"> Especialidades </a></li>
-                    <li><a href="#"> Sobre</a></li>
-                    <li><a href="#"> Projetos </a></li>
+                    <li><a href="#txt-topo-site"> Início </a></li>
+                    <li><a href="#especialidades"> Especialidades </a></li>
+                    <li><a href="#sobre"> Sobre</a></li>
+                    <li><a href="#projetos"> Projetos </a></li>
                 </ul>
             </nav> <!--menu-desktop-->
 
             <div class="btn-contato">
-                <a href="#"></a>
-                <button>Contato</button>
+                <a href="#form" id="btn-contato">Contato</a>
+               
             </div> <!--btn-contato-->
 
             <div class="btn-abrir-menu" id="btn-menu">
@@ -57,25 +57,25 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#"> Início </a></li>
-                        <li><a href="#"> Especialidades </a></li>
-                        <li><a href="#"> Sobre</a></li>
-                        <li><a href="#"> Projetos </a></li>
-                        <li><a href="#"> Contato </a></li>
+                        <li><a href="#txt-topo-site"> Início </a></li>
+                        <li><a href="#especialidades"> Especialidades </a></li>
+                        <li><a href="#sobre"> Sobre</a></li>
+                        <li><a href="#projetos"> Projetos </a></li>
+                        <li><a href="#form"> Contato </a></li>
                     </ul>
                 </nav>
 
             </div> <!--menu-mobile-->
 
-            <div class="overlay-menu">
+            <div class="overlay-menu" >
 
             </div>
         </div> <!--interface-->
 
     </header> <!--cabecario-->
 
-    <main class="principal">
-        <section class="topo-do-site">
+    <main class="principal" id="topo1">
+        <section class="topo-do-site" id="topo">
 
             <div class="interface">
 
@@ -86,8 +86,7 @@
                         <p>Transformando ideias em realidade através de soluções tecnológicas inovadoras. Estudante em
                             formação de Sistemas de Informação , com grande visão no futuro e muitos sonhos.</p>
                         <div class="btn-contato">
-                            <a href="#"></a>
-                            <button>Entre em Contato</button>
+                            <a href="#form" id="btn-contato">Entre em Contato</a>
                         </div>
                     </div><!--txt-topo-site-->
                     <div class="img-topo-site">
@@ -99,7 +98,7 @@
             </div> <!--interface-->
         </section> <!--topo-do-site-->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">Minhas <span>Especialidaes.</span></h2>
                 <div class="flex">
@@ -138,7 +137,7 @@
 
         </section> <!--especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -174,7 +173,7 @@
 
         </section> <!--sobre-->
 
-        <section class="portfolio">
+        <section class="portfolio" id="projetos">
             <div class="interface">
                 <h2 class="titulo">
                     Meus <span>Projetos.</span>
@@ -210,7 +209,7 @@
 
         </section> <!--portfolio-->
 
-        <section class="formulario">
+        <section class="formulario" id="form">
             <div class="interface">
                 <h2 class="titulo">Entre em <span>Contato.</span></h2>
                 <form class="form-contato" id="formulario">
@@ -253,6 +252,7 @@
                     <img class="email" src="images/envelope.svg" alt="icone de email"> <a
                         href="mailto:igorcdemoraes@gmail.com">igorcdemoraes@gmail.com</a>
                 </p>
+
             </div><!--line-footer-->
 
         </div> <!--interface-->

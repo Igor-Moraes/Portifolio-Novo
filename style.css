@@ -48,7 +48,7 @@ body {
 
 }
 
-.btn-contato #btn-contato {
+.btn-contato #btn-contato-header {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -61,7 +61,7 @@ body {
 
 }
 
-.btn-contato #btn-contato:hover {
+.btn-contato #btn-contato-header:hover {
     box-shadow: 0 0 8px var(--primary);
     transform: scale(1.10);
 }
@@ -183,6 +183,8 @@ footer .line-footer .menu-desktop a:hover {
 }
 
 
+
+
 /* Estilo do Topo do Site*/
 
 section.topo-do-site {
@@ -224,12 +226,26 @@ section.topo-do-site .flex {
     margin-bottom: 30px;
 }
 
-.topo-do-site .btn-contato #btn-contato {
+.topo-do-site .btn-contato #btn-contato-top {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--bg-main);
     margin-top: 70px;
     position: relative;
     animation: button 1s ease-in-out infinite alternate;
     text-decoration: none;
     gap: 10px;
+}
+
+.topo-do-site .btn-contato #btn-contato-top:hover {
+    box-shadow: 0 0 8px var(--primary);
+    transform: scale(1.10);
 }
 
 
@@ -630,6 +646,10 @@ footer .line-footer p a {
         display: block;
     }
 
+    .cabecario {
+        height: 12vh;
+    }
+
     /* Topo do Site */
 
     section.topo-do-site {
@@ -665,6 +685,7 @@ footer .line-footer p a {
         transition: 0.2s ease-in-out;
         max-width: 90vw;
     }
+
 
     /* Sobre mim */
     section.sobre {
@@ -723,4 +744,28 @@ footer .line-footer p a {
         justify-content: center;
     }
 
+    /* Menu Mobile Fixado */
+    .cabecario nav.menu-desktop {
+        display: none;
+    }
+
+    /* hide header contact button on mobile (wrong button) */
+    .cabecario .btn-contato {
+        display: none;
+    }
+
+    /* make sure the top-of-site contact button is visible */
+    .topo-do-site .btn-contato {
+        display: block;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .cabecario>.interface {
+        justify-content: space-between;
+        /* logo left, icon right */
+    }
 }
